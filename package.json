@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tketa/react-native-pokemon-dialog.git"
+    "url": "git+https://github.com/birdiecare/react-native-pokemon-dialog.git"
   },
   "keywords": [
     "react-native"
@@ -19,9 +19,9 @@
   "author": "Jérémy Gotteland",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tketa/react-native-pokemon-dialog/issues"
+    "url": "https://github.com/birdiecare/react-native-pokemon-dialog/issues"
   },
-  "homepage": "https://github.com/Tketa/react-native-pokemon-dialog#readme",
+  "homepage": "https://github.com/birdiecare/react-native-pokemon-dialog#readme",
   "dependencies": {
     "lodash": "^4.17.11",
     "react": "^16.8.6",
