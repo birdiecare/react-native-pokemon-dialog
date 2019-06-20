@@ -1,0 +1,36 @@
+{
+  "name": "react-native-pokemon-dialog",
+  "version": "1.0.0",
+  "description": "Dialog component for React-Native mimicking the UX of dialogs from Pokemon on Game Boy",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tketa/react-native-pokemon-dialog.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Jérémy Gotteland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tketa/react-native-pokemon-dialog/issues"
+  },
+  "homepage": "https://github.com/Tketa/react-native-pokemon-dialog#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-native": "^0.59.9"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.134",
+    "@types/react": "^16.8.20",
+    "@types/react-native": "^0.57.63",
+    "typescript": "^3.5.2"
+  }
+}
