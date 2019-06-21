@@ -4,7 +4,9 @@ Dialog component for React-Native mimicking the UX of dialogs from Pokemon on Ga
 
 - Progressive display of text
 - Displaying messages one after the other upon touch
-- Indicating there is another message using a blinking chevron
+- Indicating there is another message using a chevron
 
-![Pokemon Dialog Crop](https://user-images.githubusercontent.com/1935746/59567665-5e069900-9068-11e9-923d-d6bbab8b1684.gif)
+[Try it with Expo](https://expo.io/@jgo2t/react-native-pokemon-dialog-example)
+
+![image](https://user-images.githubusercontent.com/1935746/59722823-9d75e680-921c-11e9-9fae-c95387b022c3.png)
 
