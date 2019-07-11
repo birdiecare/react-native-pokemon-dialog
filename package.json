@@ -1,6 +1,6 @@
 {
   "name": "react-native-pokemon-dialog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Dialog component for React-Native mimicking the UX of dialogs from Pokemon on Game Boy",
   "main": "dist/index.js",
   "types" : "dist/index.d.ts",
