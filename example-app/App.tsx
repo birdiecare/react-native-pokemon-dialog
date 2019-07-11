@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Alert, Button } from 'react-native';
 import Dialog from 'react-native-pokemon-dialog';
 
+const professorOakFace = require('./assets/professor-oak.png');
+
 class App extends React.Component<{}, { visible: boolean }> {
   constructor(props: {}) {
     super(props);
@@ -16,14 +18,15 @@ class App extends React.Component<{}, { visible: boolean }> {
         <Button title="Click to see dialog" onPress={() => this.setState({ visible: true })} />
         {this.state.visible ? <Dialog
           messages={[
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non mi vitae orci imperdiet porttitor at eget arcu. Fusce ut neque maximus, laoreet turpis eget, rhoncus arcu.',
-            'Ut interdum est mi, at viverra nulla condimentum at. Nulla tempor nunc id sollicitudin auctor. Praesent sodales feugiat odio ac aliquet.',
-            'Aliquam erat volutpat. Duis consectetur, massa non tincidunt fermentum, turpis lectus venenatis quam, a commodo urna tortor at lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Praesent urna arcu, efficitur in efficitur non, faucibus id ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+            'Welcome to an adventure you will never forget.',
+            `I'm Oak, and to train them is my cause.`,
+            `You will travel across the land, searching far and wide.`,
+            `To understand the power that is inside.`,
           ]}
           onDone={() => this.setState({ visible: false })}
           wait={20}
           withChevron
+          iconSource={professorOakFace}
         /> : null}
       </View>
     );

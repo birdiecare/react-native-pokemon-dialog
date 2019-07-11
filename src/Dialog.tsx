@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View, Image, ImageSourcePropType } from 'react-native';
 
 const styles = {
   fullScreenOverlay: {
@@ -17,7 +17,10 @@ const styles = {
     bottom: 55,
     zIndex: 2,
     height: '20%',
+    width: '100%',
     backgroundColor: 'transparent',
+    alignItems: 'center' as 'center',
+    flexDirection: 'row' as 'row',
     opacity: 1,
   },
   dialogContainer: {
@@ -37,7 +40,7 @@ const styles = {
     right: 5,
     bottom: 0,
     width: 15,
-    fontSize: 36,
+    fontSize: 24,
   }
 }
 
@@ -45,7 +48,8 @@ type Props = {
   messages: string[];
   onDone: Function;
   withChevron: boolean;
-  wait?: number ;
+  wait?: number;
+  iconSource?: ImageSourcePropType,
 };
 
 type State = {
@@ -107,6 +111,7 @@ class DialogMessage extends React.Component<Props, State> {
     return (<>
         <View style={styles.fullScreenOverlay} />
         <View style={styles.fixedBottomContainer} >
+            {this.props.iconSource ? <Image source={this.props.iconSource} style={{ width: '20%', height: 50 }} /> : null}
             <TouchableOpacity onPress={this.handleClick}>
               <View style={styles.dialogContainer}>
                 <Text>{this.state.displayedMessage}</Text>

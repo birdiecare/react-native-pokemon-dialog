@@ -1,10 +1,12 @@
 import _ from 'lodash';
 import React from 'react';
+import { ImageSourcePropType } from 'react-native';
 declare type Props = {
     messages: string[];
     onDone: Function;
     withChevron: boolean;
     wait?: number;
+    iconSource?: ImageSourcePropType;
 };
 declare type State = {
     messages: string[];

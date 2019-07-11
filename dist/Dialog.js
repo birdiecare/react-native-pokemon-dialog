@@ -34,7 +34,10 @@ var styles = {
         bottom: 55,
         zIndex: 2,
         height: '20%',
+        width: '100%',
         backgroundColor: 'transparent',
+        alignItems: 'center',
+        flexDirection: 'row',
         opacity: 1,
     },
     dialogContainer: {
@@ -54,7 +57,7 @@ var styles = {
         right: 5,
         bottom: 0,
         width: 15,
-        fontSize: 36,
+        fontSize: 24,
     }
 };
 var DialogMessage = /** @class */ (function (_super) {
@@ -104,6 +107,7 @@ var DialogMessage = /** @class */ (function (_super) {
         return (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(react_native_1.View, { style: styles.fullScreenOverlay }),
             react_1.default.createElement(react_native_1.View, { style: styles.fixedBottomContainer },
+                this.props.iconSource ? react_1.default.createElement(react_native_1.Image, { source: this.props.iconSource, style: { width: '20%', height: 50 } }) : null,
                 react_1.default.createElement(react_native_1.TouchableOpacity, { onPress: this.handleClick },
                     react_1.default.createElement(react_native_1.View, { style: styles.dialogContainer },
                         react_1.default.createElement(react_native_1.Text, null, this.state.displayedMessage),
