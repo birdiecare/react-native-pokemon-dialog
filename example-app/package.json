@@ -9,7 +9,7 @@
     "postinstall": "rm -rf node_modules/react-native-pokemon-dialog/node_modules/react-native"
   },
   "dependencies": {
-    "expo": "^33.0.0",
+    "expo": "^46.0.14",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
